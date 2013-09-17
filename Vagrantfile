@@ -13,7 +13,7 @@ Vagrant::Config.run do |config|
         chef.add_recipe "yum::epel"
         chef.add_recipe "yum::ius"
         chef.add_recipe "yum::remi"
-        chef.add_recipe "symfony2"
+        chef.add_recipe "php-httpd"
         chef.add_recipe "mysql::server"
         chef.json = {
             "mysql" => {
